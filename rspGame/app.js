@@ -1,4 +1,4 @@
-console.log("hi");
+// console.log("hi");
 
 //모든 버튼을 buttons 변수로 저장
 const buttons = document.querySelectorAll("button");
