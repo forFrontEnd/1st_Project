@@ -30,7 +30,22 @@ main {
 .btn {
   padding: 30px 0;
 }
-.btn #btn1 {
+.btn #btn1 #img-scissor {
+  width: 80px;
+  height: 70px;
+  cursor: pointer;
+}
+.btn #btn2 #img-rock {
+  width: 57px;
+  height: 57px;
+  cursor: pointer;
+}
+.btn #btn3 #img-paper {
+  width: 70px;
+  height: 60px;
+  cursor: pointer;
+}
+/* .btn #btn1 {
   width: 55px;
   height: 40px;
   margin: 10px;
@@ -62,7 +77,7 @@ main {
   text-shadow: 1px 1px 3px gray;
   font-weight: 600;
   cursor: pointer;
-}
+} */
 .result h4 {
   padding: 20px 0;
 }
