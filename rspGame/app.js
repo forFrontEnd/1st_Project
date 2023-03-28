@@ -6,15 +6,15 @@ const buttons = document.querySelectorAll("button");
 //0~2 숫자로 result배열에서 결과 출력 가능
 const result = ['가위', '바위', '보'];
 
-//최종결과 발표
-// const mineResult = document.querySelector('.myChoice');
-// const computerResult = document.querySelector('.computerChoice');
-// const winner = document.querySelector('.winner');
+//최종결과 변수 선언
+const mineResult = document.querySelector('.myChoice');
+const computerResult = document.querySelector('.computerChoice');
+const winner = document.querySelector('.winner');
 
 // const finalResult = (mineResult, computerResult, winner) => {
 //   computerResult.innerText = computer;
 //   mineResult.innerText = myChoice;
-//   winner.innerText = result;
+//   winner.innerText = gameResult;
 // };
 
 //math.floor을 사용하여 난수의 정수값을 구하고, math.random*3을 통해 최대값이 3인 랜덤숫자를 출력
@@ -36,14 +36,23 @@ buttons.forEach((button) => {
 const gameResult = (myChoice, computer) => {
   if(myChoice === computer){
     console.log('무승부');
+    mineResult.innerText = myChoice;
+    computerResult.innerText = computer;
+    winner.innerText = '무승부';
   } else{
     //myChoice:가위 vs computer: 보
     if(myChoice=='scissor'&&computer=='paper'){
       console.log('승');
+      // mineResult.innerText = '가위';
+      // computerResult.innerText = '보';
+      // winner.innerText = '승리';
     }
     //myChoice: 가위 vs computer: 바위
     else if(myChoice=='scissor'&&computer=='rock'){
       console.log('패');
+      // mineResult.innerText = '가위';
+      // computerResult.innerText = '바위';
+      // winner.innerText = '패배';
     }
     //myChoice: 바위 vs computer: 가위
     else if(myChoice=='rock'&&computer=='scissor'){
