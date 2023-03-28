@@ -45,39 +45,7 @@ main {
   height: 60px;
   cursor: pointer;
 }
-/* .btn #btn1 {
-  width: 55px;
-  height: 40px;
-  margin: 10px;
-  background-color: #b1ffd0;
-  border-radius: 7%;
-  color: white;
-  text-shadow: 1px 1px 3px gray;
-  font-weight: 600;
-  cursor: pointer;
-}
-.btn #btn2 {
-  width: 55px;
-  height: 40px;
-  margin: 10px;
-  background-color: #fbd786;
-  border-radius: 7%;
-  color: white;
-  text-shadow: 1px 1px 2px gray;
-  font-weight: 600;
-  cursor: pointer;
-}
-.btn #btn3 {
-  width: 55px;
-  height: 40px;
-  margin: 10px;
-  background-color: #f7797d;
-  border-radius: 7%;
-  color: white;
-  text-shadow: 1px 1px 3px gray;
-  font-weight: 600;
-  cursor: pointer;
-} */
+
 .result h4 {
   padding: 20px 0;
 }
