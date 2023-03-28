@@ -30,17 +30,17 @@ main {
 .btn {
   padding: 30px 0;
 }
-.btn #btn1 #img-scissor {
+.btn #btn1 .img-scissor {
   width: 80px;
   height: 70px;
   cursor: pointer;
 }
-.btn #btn2 #img-rock {
+.btn #btn2 .img-rock {
   width: 57px;
   height: 57px;
   cursor: pointer;
 }
-.btn #btn3 #img-paper {
+.btn #btn3 .img-paper {
   width: 70px;
   height: 60px;
   cursor: pointer;
