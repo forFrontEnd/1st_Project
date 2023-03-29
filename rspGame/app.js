@@ -34,17 +34,20 @@ const gameResult = (myChoice, computer) => {
   const mineResult = document.querySelector(".myChoice");
   const computerResult = document.querySelector(".computerChoice");
   let message = document.querySelector(".winner");
+  function finalResult() {
+    mineResult.innerText = myChoice;
+    computerResult.innerText = computer;
+    return;
+  }
   //myChoice: 가위
   if (myChoice === "가위" && computer !== myChoice) {
     if (computer === "보") {
       console.log("승");
-      mineResult.innerText = myChoice;
-      computerResult.innerText = computer;
+      finalResult();
       message.innerText = "승리";
     } else {
       console.log("패");
-      mineResult.innerText = myChoice;
-      computerResult.innerText = computer;
+      finalResult();
       message.innerText = "패배";
     }
   }
@@ -52,13 +55,11 @@ const gameResult = (myChoice, computer) => {
   else if (myChoice === "바위" && computer !== myChoice) {
     if (computer === "가위") {
       console.log("승");
-      mineResult.innerText = myChoice;
-      computerResult.innerText = computer;
+      finalResult();
       message.innerText = "승리";
     } else {
       console.log("패");
-      mineResult.innerText = myChoice;
-      computerResult.innerText = computer;
+      finalResult();
       message.innerText = "패배";
     }
   }
@@ -66,21 +67,18 @@ const gameResult = (myChoice, computer) => {
   else if (myChoice === "보" && computer !== myChoice) {
     if (computer === "바위") {
       console.log("승");
-      mineResult.innerText = myChoice;
-      computerResult.innerText = computer;
+      finalResult();
       message.innerText = "승리";
     } else {
       console.log("패");
-      mineResult.innerText = myChoice;
-      computerResult.innerText = computer;
+      finalResult();
       message.innerText = "패배";
     }
   }
   //무승부
   else {
     console.log("무승부");
-    mineResult.innerText = myChoice;
-    computerResult.innerText = computer;
+    finalResult();
     message.innerText = "무승부";
   }
 };
