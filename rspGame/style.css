@@ -21,6 +21,7 @@ header h1 {
   width: 100%;
   /* vh: 뷰포트 높이에 영향받는 단위값 */
   margin-top: 30vh;
+  margin-bottom: 5vh;
   text-align: center;
 }
 
@@ -53,7 +54,10 @@ main {
   margin-left: 3px;
 }
 
-.result h4 {
+.result {
+  margin: 20px;
+}
+.result h3 {
   padding: 20px 0;
 }
 .result .info {
@@ -64,4 +68,12 @@ span {
   float: left;
   text-align: center;
   padding: 10px;
+}
+.result .info > .computerChoice,
+.myChoice {
+  font-weight: 700;
+  color: navy;
+}
+.winner {
+  color: red;
 }
