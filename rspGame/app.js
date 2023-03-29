@@ -21,14 +21,6 @@ buttons.forEach((button) => {
   button.addEventListener("click", game);
 });
 
-//최종결과 발표
-// const finalResult = () => {
-//   const mineResult = document.querySelector(".myChoice");
-//   const computerResult = document.querySelector(".computerChoice");
-//   mineResult.innerText = this.myChoice;
-//   computerResult.innerText = this.computer;
-// };
-
 //승부 결과
 const gameResult = (myChoice, computer) => {
   const mineResult = document.querySelector(".myChoice");
