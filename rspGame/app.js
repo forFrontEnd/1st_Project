@@ -21,6 +21,7 @@ buttons.forEach((button) => {
   button.addEventListener("click", game);
 });
 
+//최종결과 발표
 // const finalResult = () => {
 //   const mineResult = document.querySelector(".myChoice");
 //   const computerResult = document.querySelector(".computerChoice");
@@ -30,14 +31,20 @@ buttons.forEach((button) => {
 
 //승부 결과
 const gameResult = (myChoice, computer) => {
+  const mineResult = document.querySelector(".myChoice");
+  const computerResult = document.querySelector(".computerChoice");
   let message = document.querySelector(".winner");
   //myChoice: 가위
   if (myChoice === "가위" && computer !== myChoice) {
     if (computer === "보") {
       console.log("승");
+      mineResult.innerText = "가위";
+      computerResult.innerText = "보";
       message.innerText = "승리";
     } else {
       console.log("패");
+      mineResult.innerText = "가위";
+      computerResult.innerText = "바위";
       message.innerText = "패배";
     }
   }
@@ -45,9 +52,13 @@ const gameResult = (myChoice, computer) => {
   else if (myChoice === "바위" && computer !== myChoice) {
     if (computer === "가위") {
       console.log("승");
+      mineResult.innerText = "바위";
+      computerResult.innerText = "가위";
       message.innerText = "승리";
     } else {
       console.log("패");
+      mineResult.innerText = "바위";
+      computerResult.innerText = "보";
       message.innerText = "패배";
     }
   }
@@ -55,30 +66,21 @@ const gameResult = (myChoice, computer) => {
   else if (myChoice === "보" && computer !== myChoice) {
     if (computer === "바위") {
       console.log("승");
+      mineResult.innerText = "보";
+      computerResult.innerText = "바위";
       message.innerText = "승리";
     } else {
       console.log("패");
+      mineResult.innerText = "보";
+      computerResult.innerText = "가위";
       message.innerText = "패배";
     }
   }
   //무승부
   else {
     console.log("무승부");
+    mineResult.innerText = myChoice;
+    computerResult.innerText = computer;
     message.innerText = "무승부";
   }
 };
-
-//최종결과 변수 선언
-// const mineResult = document.querySelector(".myChoice");
-// const computerResult = document.querySelector(".computerChoice");
-// const winner = document.querySelector(".winner");
-
-// const finalResult = (mineResult, computerResult, winner) => {
-//   computerResult.innerText = computer;
-//   mineResult.innerText = myChoice;
-//   winner.innerText = gameResult;
-// };
-
-// document.querySelector(".myChoice").innerText = this.myChoice;
-// document.querySelector(".computerChoice").innerText = this.computer;
-// document.querySelector(".winner").innerText = gameResult();
